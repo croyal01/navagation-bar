@@ -1,4 +1,11 @@
+import RMPLogo from "../images/RMP_3-01.jpg";
+
 export default function Home()
 {
-    return <h1>Royal Managed Properties</h1>
+    return (
+        
+           
+            <img  className="logoimg" src={RMPLogo} alt="Royal Consulting Logo" />
+       
+        );
 }

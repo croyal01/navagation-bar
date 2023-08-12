@@ -1,8 +1,5 @@
-
-
 import React from "react";
 import {Route, Routes} from "react-router-dom";
-
 //import App from "./App";
 import "./styles.css";
 import About from "./Pages/About.js";
@@ -11,26 +8,25 @@ import Services from "./Pages/Services.js";
 import Welcome from "./Pages/Welcome.js";
 import Navbar from "./Components/NavBar.js";
 
-import Footer from "./Components/Footer";
+//import Footer from "./Components/Footer";
+//import Header from "./Components/Header";
 
 function App() { 
- 
-return(
- <Navbar> 
-    <div className="container"> 
-      <Routes>
-        <Route path="/Home" element={<Home />}></Route>
-        <Route path="/About" element={<About />}></Route>
-        <Route path="/Welcome" element={<Welcome />}></Route>
-        <Route path="/Services" element={<Services />}></Route>
-      </Routes>
-      <Footer />
+  return(
+    <div className="container">
+      <Navbar>        
+          <Routes>
+            <Route className="customlink" path="/Home" element={<Home />}>Home</Route>
+            <Route className="customlink  about" path="/About" element={<About />}>About</Route>
+            <Route className="customlink" path="/Welcome" element={<Welcome />}>Welcome</Route>
+            <Route className="customlink" path="/Services" element={<Services />}>Services</Route>
+          </Routes>
+      </Navbar>  
+      {/*<Header />
+      <Footer />*/}
     </div>
-     {/* After adding return I am seeing an empty page */}
-  </Navbar> 
-);
+  );
 }
-
 export default App;
 
 /**

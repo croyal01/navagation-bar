@@ -9,6 +9,7 @@ body{
 {
     margin: 1rem;
     text-align: center;
+    width: 100%;
 }
 .nav{
     background-color: black;
@@ -18,7 +19,6 @@ body{
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
-
 }
 
 .nav ul{
@@ -28,6 +28,7 @@ body{
    
     display: flex;
     gap: 1rem;
+   
 }
 
 .nav a{
@@ -38,6 +39,17 @@ body{
     padding: .25rem;
 }
 
+.customlink
+{
+    background-color: black;
+    color: white;
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    text-decoration: none;
+}
+
 .site-title
 {
     font-size: 2rem;
@@ -46,10 +58,47 @@ body{
 
 .nav li.active{
     background-color: #555;
+    
 }
 
 .nav li.hover{
     background-color: #777;
+    
+}
+.divlogoimg
+{  
+    display: block;
+    background-color: black;
+    color:white;
+    height: 100%;  
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
+.logoimg
+{
+    display: block;
+    align-items: center;
+    height: 100%;  
+    width: 100%;
+    padding: .25rem;
+    justify-content: center;
+}
 
+.about
+{
+    display: block;
+    background-color: black;
+    color:white;
+    margin: 1rem;
+    border:'1px'
+   
+    
+    /*marginLeft:'5%';
+    marginRight:'5%';*/
+}
+.about p
+{
+    margin:3rem;
+}
