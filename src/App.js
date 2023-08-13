@@ -16,10 +16,10 @@ function App() {
     <div className="container">
       <Navbar>        
           <Routes>
-            <Route className="customlink" path="/Home" element={<Home />}>Home</Route>
-            <Route className="customlink  about" path="/About" element={<About />}>About</Route>
-            <Route className="customlink" path="/Welcome" element={<Welcome />}>Welcome</Route>
-            <Route className="customlink" path="/Services" element={<Services />}>Services</Route>
+            <Route className="customlink about" path="/Home" element={<Home />}>Home</Route>
+            <Route className="customlink about" path="/About" element={<About />}>About</Route>
+            <Route className="customlink about" path="/Welcome" element={<Welcome />}>Welcome</Route>
+            <Route className="customlink about" path="/Services" element={<Services />}>Services</Route>
           </Routes>
       </Navbar>  
       {/*<Header />
